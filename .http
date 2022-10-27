@@ -1,0 +1,38 @@
+GET http://localhost:3000/coffees
+
+###
+
+GET http://localhost:3000/coffees/123
+
+###
+
+POST http://localhost:3000/coffees
+Content-Type: application/json
+
+{
+  "name": "facere",
+  "brand": "natus",
+  "flavors": ["coklat", "keju", "cappucino"],
+  "foo": true
+}
+
+###
+
+PATCH  http://localhost:3000/coffees/1
+Content-Type: application/json
+
+{
+  "name": "foo"
+}
+
+
+###
+
+DELETE   http://localhost:3000/coffees/1
+Content-Type: application/json
+
+{
+  "name": "foo",
+  "age": 87
+}
+
